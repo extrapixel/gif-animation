@@ -8,7 +8,7 @@ the headers of the GifDecoder &amp; GifEncoder classes.
 
 ## DOWNLOAD
 
-[gifAnimation_processing_library_v2_3.zip][3] (updated: 18. January 2008)
+[gifAnimation.zip][3] (compatible with Processing 1.x and 2.x)
 
 ##  INSTALLATION:
 
@@ -194,6 +194,6 @@ the sketch folder. Returns true if saving the file was successful, false if not.
 
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
-   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation_processing_library_v2_3.zip
+   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
    [4]: http://extrapixel.ch/processing/gifAnimation/applet/
   
