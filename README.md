@@ -1,7 +1,7 @@
 # gifAnimation processing library
 
 GifAnimation is a [Processing][1] library to play and export GIF
-animations. It is under a GPL license. The GIFEncoder &amp; GIFDecoder
+animations. The GIFEncoder &amp; GIFDecoder
 classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in
 the headers of the GifDecoder &amp; GifEncoder classes.
 
@@ -29,7 +29,7 @@ import gifAnimation.*;
 
 ### DISPLAYING A GIF ANIMATION:
 
-The class to access/display GIF animations is called `_Gif_`. It has two possibilities to access the frame pixel data:
+The class to access/display GIF animations is called `Gif`. It has two possibilities to access the frame pixel data:
 
 Extract all frames of an animated Gif into a PImage[] array using the static method "getPImages()". you need to pass a reference to the PApplet and a filename to it. The file should be in the sketch data folder. This method is useful if you just want to mess with the frames yourself and don't need the playback possibilities. The method is static, so you have no separate thread going.
 
