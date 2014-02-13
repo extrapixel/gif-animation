@@ -194,6 +194,6 @@ the sketch folder. Returns true if saving the file was successful, false if not.
 
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
-   [3]: http://www.extrapixel.ch/gifAnimation_processing_library_v2_3.zip
+   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation_processing_library_v2_3.zip
    [4]: http://extrapixel.ch/processing/gifAnimation/applet/
   
