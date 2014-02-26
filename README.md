@@ -1,9 +1,6 @@
 # gifAnimation processing library
 
-GifAnimation is a [Processing][1] library to play and export GIF
-animations. The GIFEncoder &amp; GIFDecoder
-classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in
-the headers of the GifDecoder &amp; GifEncoder classes.
+GifAnimation is a [Processing][1] library to play and export GIF animations. The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
 
 
 ## DOWNLOAD
@@ -11,16 +8,14 @@ the headers of the GifDecoder &amp; GifEncoder classes.
 [gifAnimation.zip][3] (compatible with Processing 1.x and 2.x)
 
 ##  INSTALLATION:
-
-Unzip the gifAnimation.zip and copy the gifAnimation-folder into your
-processing libraries folder.
+### Processing 1.x
+Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
+### Processing 2.x
+Same as Processing 1.x **OR** use the built-in library-browser in the IDE
 
 ## USAGE:
 
-Besides this reference, there are basic examples included in the download.
-There's also an [online example][4].
-To use gifAnimation library, you need to import it into your sketch
-by using the menu or typing
+Besides this reference, there are basic examples included in the download. There's also an [online example][4]. To use gifAnimation library, you need to import it into your sketch by using the menu or typing
 
 
 ```java
