@@ -37,4 +37,5 @@ void draw() {
 
 void keyPressed() {
   gifExport.finish();
+  println("gif saved");
 }
