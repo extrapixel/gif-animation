@@ -25,8 +25,9 @@ public void setup() {
   // make it a looping animation
   gifExport.setRepeat(0); 
   
-  /* make white the transparent color. every black pixel in the animation will be transparent
-   * GIF doesn't know have alpha values like processing. a pixel can only be totally transparent or totally opaque.
+  /* make white the transparent color. EVERY white pixel in the animation will be transparent.
+   * GIF doesn't have alpha like processing. a pixel can only be totally transparent or totally opaque.
+   *
    * set the processing background and the transparent gif color to the same value as the gifs destination background color 
    * (e.g. the website bg-color). Like this you can have the antialiasing from processing in the gif.*/
    gifExport.setTransparent(255, 255, 255); 
@@ -43,7 +44,7 @@ void draw() {
   rect(-50, -50, 100, 100);
   
   // we make the gif-"framerate" the same as the sketch framerate.
-  gifExport.setDelay(1000/FRAME_RATE); // takes milliseconds. we make the gif-"framerate" the same as the sketch framerate. 
+  gifExport.setDelay(1000/FRAME_RATE);
   gifExport.addFrame();
 }
 
