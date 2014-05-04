@@ -321,7 +321,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	 * Retun the number of frame of the gif
 	 * 
 	 */
-	public int getGifLenght() {
+	public int getGifLength() {
 		return frames.length;
 		
 	}
