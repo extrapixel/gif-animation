@@ -1,0 +1,28 @@
+<project name="gif-animation" default="jar">
+	<!-- FIXME: This will be used in the "compile" target to locate core.jar. -->
+	<property name="processing" location="/home/aib/proj/git/processing"/>
+
+	<target name="init">
+		<mkdir dir="bin"/>
+		<mkdir dir="library"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac destdir="bin" includeantruntime="false">
+			<classpath path="${processing}/core/library/core.jar"/>
+			<src path="src"/>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar jarfile="library/gifAnimation.jar" basedir="bin"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+
+	<target name="distclean" depends="clean">
+		<delete dir="library"/>
+	</target>
+</project>
