@@ -83,6 +83,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	public void dispose() {
 		// fin
 		// System.out.println("disposing");
+		parent.unregisterDispose(this);
 		stop();
 		runner = null;
 	}
