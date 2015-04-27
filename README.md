@@ -43,14 +43,16 @@ Gif myAnimation = new Gif(PApplet parent, String filename);
 In a sketch this would look like this:
 
 ```java
+Gif myAnimation;
+
 void setup() {
-size(400,400);
-    Gif myAnimation = new Gif(this, "lavalamp.gif");
-myAnimation.play();
+    size(400,400);
+    myAnimation = new Gif(this, "lavalamp.gif");
+    myAnimation.play();
 }
 
 void draw() {
-image(myAnimation, 10,10);
+    image(myAnimation, 10, 10);
 }
 ```
 
