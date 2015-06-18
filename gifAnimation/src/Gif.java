@@ -51,7 +51,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	// last time the frame changed
 	private int lastJumpTime;
 	// version
-	private static String version = "2.3";
+	private static String version = "2.4";
 
 	public Gif(PApplet parent, String filename) {
 		// this creates a fake image so that the first time this
