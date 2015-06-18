@@ -318,5 +318,13 @@ public class Gif extends PImage implements PConstants, Runnable {
 			lastJumpTime = parent.millis();
 		}
 	}
+	/**	
+	 * Retun the number of frame of the gif
+	 * 
+	 */
+	public int getGifLength() {
+		return frames.length;
+		
+	}
 
 }
