@@ -1,14 +1,14 @@
 /*
- * GifAnimation is a processing library to play gif animations and to 
+ * GifAnimation is a processing library to play gif animations and to
  * extract frames from a gif file. It can also export animated GIF animations
  * This file class is under a GPL license. The Decoder used to open the
  * gif files was written by Kevin Weiner. please see the separate copyright
  * notice in the header of the GifDecoder / GifEncoder class.
- * 
+ *
  * by extrapixel 2007
  * http://extrapixel.ch
- * 
-  
+ *
+
   	This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -82,7 +82,7 @@ public class GifMaker implements PConstants {
 
 	/*
 	 * set the disposal mode for the last added frame
-	 * 
+	 *
 	 * from GIF specs: CODE MEANING 00 Nothing special 01 KEEP - retain the
 	 * current image 02 RESTORE BACKGROUND - restore the background color 03
 	 * REMOVE - remove the current image, and restore whatever image was beneath
@@ -99,7 +99,7 @@ public class GifMaker implements PConstants {
 	 * but slow processing significantly. 10 is the default, and produces good
 	 * color mapping at reasonable speeds. Values greater than 20 do not yield
 	 * significant improvements in speed.
-	 * 
+	 *
 	 * @param quality
 	 *            int greater than 0.
 	 * @return
@@ -110,7 +110,7 @@ public class GifMaker implements PConstants {
 
 	/*
 	 * sets the amount of times the animation should repeat
-	 * 
+	 *
 	 */
 	public void setRepeat(int repeat) {
 		encoder.setRepeat(repeat);
@@ -139,6 +139,20 @@ public class GifMaker implements PConstants {
 
 	public void setTransparent(int red, int green, int blue) {
 		encoder.setTransparent(new Color(red, green, blue));
+	}
+
+	/*
+	 * fixes the color palette for future generating until cleared.
+	 */
+	public void setPallate() {
+		encoder.setPalette(parent.pixels, parent.width, parent.height);
+	}
+
+	/*
+	 * clears the color palette (defers to learning from each frame).
+	 */
+	public void clearPallate() {
+		encoder.clearPalette();
 	}
 
 	/*
