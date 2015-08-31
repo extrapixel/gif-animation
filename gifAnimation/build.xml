@@ -1,8 +1,7 @@
 <project name="gif-animation" default="jar">
-	<!-- FIXME: This will be used in the "compile" target to locate core.jar. -->
-	<property name="processing" location="/home/aib/proj/git/processing"/>
-
 	<target name="init">
+		<fail unless="processing"
+		      message="Please set the 'processing' property to the path of the processing project, where core.jar is located under core/library/. E.g.:&#xA;    ant -Dprocessing=/usr/src/processing"/>
 		<mkdir dir="bin"/>
 		<mkdir dir="library"/>
 	</target>
