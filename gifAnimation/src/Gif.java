@@ -135,11 +135,11 @@ public class Gif extends PImage implements PConstants, Runnable {
 	}
 
 	/*
-	 * creates an input stream using processings openStream() method to read
+	 * creates an input stream using processings createInput() method to read
 	 * from the sketch data-directory
 	 */
 	private static InputStream createInputStream(PApplet parent, String filename) {
-		InputStream inputStream = parent.openStream(filename);
+		InputStream inputStream = parent.createInput(filename);
 		return inputStream;
 	}
 
