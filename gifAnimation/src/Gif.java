@@ -73,7 +73,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 		// re-init our PImage with the new size
 		super.init(frames[0].width, frames[0].height, ARGB);
 		jump(0);
-		parent.registerDispose(this);
+		parent.registerMethod("dispose", this);
 
 		// and now, make the magic happen
 		runner = new Thread(this);
@@ -83,7 +83,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	public void dispose() {
 		// fin
 		// System.out.println("disposing");
-		parent.unregisterDispose(this);
+		parent.unregisterMethod("dispose", this);
 		stop();
 		runner = null;
 	}
