@@ -41,20 +41,20 @@ public class GifMaker implements PConstants {
 
 	public GifMaker(PApplet parent, String filename) {
 		this.parent = parent;
-		parent.registerDispose(this);
+		parent.registerMethod("dispose", this);
 		encoder = initEncoder(filename);
 	}
 
 	public GifMaker(PApplet parent, String filename, int quality) {
 		this.parent = parent;
-		parent.registerDispose(this);
+		parent.registerMethod("dispose", this);
 		encoder = initEncoder(filename);
 		setQuality(quality);
 	}
 
 	public GifMaker(PApplet parent, String filename, int quality, int bgColor) {
 		this.parent = parent;
-		parent.registerDispose(this);
+		parent.registerMethod("dispose", this);
 		encoder = initEncoder(filename);
 		setQuality(quality);
 		setTransparent(bgColor);
