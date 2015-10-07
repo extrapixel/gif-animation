@@ -1,21 +1,24 @@
 # gifAnimation processing library
 
-GifAnimation is a [Processing][1] library to play and export GIF animations. The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
+GifAnimation is a [Processing][1] library to play and export GIF animations. 
+Original code by [Patrick Meister][5] .
+The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2].
+Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
+Processing 3.x port by [Jerome Saint-Clair][3]
 
 
 ## DOWNLOAD
 
-[gifAnimation.zip][3] (compatible with Processing 1.x and 2.x)
+[GifAnimation.zip][4] (compatible with Processing 3.x)
 
 ##  INSTALLATION:
-### Processing 1.x
+### Processing 3.x
 Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
-### Processing 2.x
-Same as Processing 1.x **OR** use the built-in library-browser in the IDE
+
 
 ## USAGE:
 
-Besides this reference, there are basic examples included in the download. There's also an [online example][4]. To use gifAnimation library, you need to import it into your sketch by using the menu or typing
+Besides this reference, there are basic examples included in the download. To use gifAnimation library, you need to import it into your sketch by using the menu or typing
 
 
 ```java
@@ -31,7 +34,7 @@ Extract all frames of an animated Gif into a PImage[] array using the static met
 ```java
 PImage[] allFrames = Gif.getPImages(this, "lavalamp.gif");
 ```
-The second way to acces the animation is to play it like a video. This will play the animation with the frame delays specified in the GIF file. Gif extends PImage, so any instance of Gif fits wherever PImage can be used.
+The second way to access the animation is to play it like a video. This will play the animation with the frame delays specified in the GIF file. Gif extends PImage, so any instance of Gif fits wherever PImage can be used.
 
 #### Create a new Gif object
 
@@ -155,13 +158,13 @@ when rendering the GIF. So, if you set the transparent color to black, the
 black pixels in your gif file will be transparent.
 
 #### void setQuality(int qualtiy)
-Sets the quality of the color quantization process. GIF only supports 256 indexed colors per frame. So, the colors that come in your images need to be reduced to a set of 256 colors. The quality of this process can be set using this method (or by instantiating the GifMaker object wiht the respective constructor). Default is 10 and seems to produce good results. Higher qualities will cause the qantization process to be more expensive in terms of cpu-usage.
+Sets the quality of the color quantization process. GIF only supports 256 indexed colors per frame. So, the colors that come in your images need to be reduced to a set of 256 colors. The quality of this process can be set using this method (or by instantiating the GifMaker object with the respective constructor). Default is 10 and seems to produce good results. Higher qualities will cause the quantization process to be more expensive in terms of cpu-usage.
 
 #### void setSize(int width, int height)
 Sets the size of the new GIF file. If this method is not invoked, the image dimensions of the first added frame will be the size of the GIF.
 
 #### void setRepeat(int count)
-Sets the repeat setting in the GIF file. GIF renderers like webbrowsers should respect this setting and loop the animation that many times before stopping. Default is 1. 0 means endless loop.
+Sets the repeat setting in the GIF file. GIF renderers like web browsers should respect this setting and loop the animation that many times before stopping. Default is 1. 0 means endless loop.
 
 #### void addFrame()
 Adds the current sketch window content as a new gif frame.
@@ -175,7 +178,7 @@ Sets the delay (the "framerate") for the most recently added frame. This is meas
 back speed.
 
 #### void setDispose(int mode)
-Sets the disposal mode for the current frame. Disposal modes are a special concept used in the GIF file format. It basically tetermines whether a frame will be overriden by the next frame, or if the next frame should be added, layed over the last frame.
+Sets the disposal mode for the current frame. Disposal modes are a special concept used in the GIF file format. It basically determines whether a frame will be overriden by the next frame, or if the next frame should be added, layed over the last frame.
 For convenience there are constants for the different disposal modes:
 
 | Dispose mode |  |
@@ -191,6 +194,7 @@ the sketch folder. Returns true if saving the file was successful, false if not.
 
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
-   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
-   [4]: http://extrapixel.ch/processing/gifAnimation/applet/
+   [3]: http://www.saint-clair.net
+   [4]: https://github.com/01010101/GifAnimation/tree/master/download/GifAnimation.zip
+   [5]: https://github.com/extrapixel
   
