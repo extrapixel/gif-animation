@@ -36,7 +36,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	private boolean play;
 	// if the animation is currently looping
 	private boolean loop;
-	// wehter the repeat setting from the gif-file should be ignored
+	// wether the repeat setting from the gif-file should be ignored
 	private boolean ignoreRepeatSetting = false;
 	// nr of repeats specified in the gif-file. 0 means repeat forever
 	private int repeatSetting = 1;
@@ -51,7 +51,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	// last time the frame changed
 	private int lastJumpTime;
 	// version
-	private static String version = "2.4";
+	private static String version = "3.1";
 
 	public Gif(PApplet parent, String filename) {
 		// this creates a fake image so that the first time this
@@ -83,7 +83,6 @@ public class Gif extends PImage implements PConstants, Runnable {
 	public void dispose() {
 		// fin
 		// System.out.println("disposing");
-		parent.unregisterMethod("dispose", this);
 		stop();
 		runner = null;
 	}
@@ -303,6 +302,7 @@ public class Gif extends PImage implements PConstants, Runnable {
 	/**
 	 * Jump to a specific location (in frames). if the frame does not exist, go
 	 * to last frame
+	 * @param where : file location (in sketch)
 	 */
 	public void jump(int where) {
 		if (frames.length > where) {
@@ -317,14 +317,6 @@ public class Gif extends PImage implements PConstants, Runnable {
 			// set the jump time
 			lastJumpTime = parent.millis();
 		}
-	}
-	/**	
-	 * Retun the number of frame of the gif
-	 * 
-	 */
-	public int getGifLength() {
-		return frames.length;
-		
 	}
 
 }
