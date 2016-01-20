@@ -142,7 +142,7 @@ public class GifMaker implements PConstants {
 	 */
 	public void addFrame() {
 		parent.loadPixels();
-		addFrame(parent.pixels, parent.width, parent.height);
+		addFrame(parent.pixels, parent.pixelWidth, parent.pixelHeight);
 	}
 
 	public void addFrame(PImage newImage) {
