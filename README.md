@@ -8,8 +8,8 @@ Processing 3.x port by [Jerome Saint-Clair][3]
 
 ## DOWNLOAD
 
-[gifAnimation.zip][4] (compatible with Processing 1.x and 2.x)
-[GifAnimation.zip][5] (compatible with Processing 3.x)
+- [gifAnimation.zip][4] (compatible with Processing 1.x and 2.x)
+- [GifAnimation.zip][5] (compatible with Processing 3.x)
 
 ##  INSTALLATION:
 
