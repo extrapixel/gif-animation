@@ -1,17 +1,24 @@
 # gifAnimation processing library
 
-GifAnimation is a [Processing][1] library to play and export GIF animations. The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
-
+GifAnimation is a [Processing][1] library to play and export GIF animations. 
+Original code by [Patrick Meister][6].
+The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2].
+Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
+Processing 3.x port by [Jerome Saint-Clair][3]
 
 ## DOWNLOAD
 
-[gifAnimation.zip][3] (compatible with Processing 1.x and 2.x)
+[gifAnimation.zip][4] (compatible with Processing 1.x and 2.x)
+[GifAnimation.zip][5] (compatible with Processing 3.x)
 
 ##  INSTALLATION:
+
 ### Processing 1.x
 Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
 ### Processing 2.x
 Same as Processing 1.x **OR** use the built-in library-browser in the IDE
+### Processing 3.x
+Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
 
 ## USAGE:
 
@@ -191,6 +198,7 @@ the sketch folder. Returns true if saving the file was successful, false if not.
 
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
-   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
-   [4]: http://extrapixel.ch/processing/gifAnimation/applet/
-  
+   [3]: http://www.saint-clair.net
+   [4]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
+   [5]: https://github.com/extrapixel/gif-animation/archive/3.0.zip
+   [6]: https://github.com/extrapixel
