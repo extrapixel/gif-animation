@@ -2,14 +2,14 @@
 
 GifAnimation is a [Processing][1] library to play and export GIF animations. 
 Original code by [Patrick Meister][5] .
-The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2].
+The GIFEncoder &amp; GIFDecoder classes were written by Kevin Weiner.
 Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
 Processing 3.x port by [Jerome Saint-Clair][3]
 
 
 ## DOWNLOAD
 
-[GifAnimation.zip][4] (compatible with Processing 3.x)
+[gifAnimation.zip][4] (compatible with Processing 3.x)
 
 ##  INSTALLATION:
 ### Processing 3.x
@@ -195,5 +195,5 @@ the sketch folder. Returns true if saving the file was successful, false if not.
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
    [3]: http://www.saint-clair.net
-   [4]: https://github.com/extrapixel/gif-animation/archive/3.0.zip
+   [4]: https://github.com/extrapixel/gif-animation/raw/master/distribution/gifAnimation.zip
    [5]: https://github.com/extrapixel
