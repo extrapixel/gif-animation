@@ -195,5 +195,5 @@ the sketch folder. Returns true if saving the file was successful, false if not.
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
    [3]: http://www.saint-clair.net
-   [4]: https://github.com/extrapixel/gif-animation/blob/3.0/gifAnimation.zip
+   [4]: https://github.com/extrapixel/gif-animation/raw/master/distribution/gifAnimation.zip
    [5]: https://github.com/extrapixel
